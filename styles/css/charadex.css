@@ -774,3 +774,35 @@ p:last-child {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
 }
+
+/* ============================================================= */
+/* Cute ML Image Code
+/* ============================================================= */
+.ml-title-button {
+  width: 60%;
+  margin-bottom: -225px;
+  z-index: 0;
+  position: relative;
+  text-align: right;
+  left: 41%;
+}
+.image-tab {
+  border-radius: 50%;
+  background-color: bisque;
+  max-width: 31em;
+  min-height: 15em;
+  max-height: 31em;
+  align-content: center;
+  margin-bottom: -200px;
+  margin-top: -62px;
+  width: 61%;
+  height: 29vw;
+  z-index: 1;
+}
+.ml-image-tabs {
+  flex-direction: column;
+  width: 50%;
+  position: relative;
+  z-index: 0;
+  margin-bottom: 78px;
+}
