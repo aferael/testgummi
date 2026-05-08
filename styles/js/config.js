@@ -420,8 +420,6 @@ charadex.page.adopts = {
     toggle: true,
   }
 
-}
-
 };
 
 /* Inventory
