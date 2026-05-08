@@ -404,7 +404,7 @@ charadex.page.adopts = {
     }
   },
 
-  fauxFolder: {
+ fauxFolder: {
     toggle: true,
     folderProperty: 'Species',
     parameters: charadex.sheet.options.species,
@@ -413,12 +413,40 @@ charadex.page.adopts = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['ID', 'Name', 'Designer', 'Artist']
+    parameters: ['ID', 'Name', 'Owner', 'Designer', 'Artist', 'Subspecies','Basics','Hoard','Gummi','Mutations', 'Status']
   },
 
   prevNext: {
     toggle: true,
   },
+
+  relatedData: {
+
+    [charadex.sheet.pages.masterlistLog]: {
+
+      sheetPage: charadex.sheet.pages.masterlistLog,
+      primaryProperty: 'id',
+      relatedProperty: 'id',
+      dexSelector: 'log',
+      profileProperty: 'design',
+      profileToggle: false,
+
+      sort: {
+        toggle: true,
+        key: "timestamp",
+        order: "desc",
+        parameters: []
+      },
+
+      pagination: {
+        toggle: true,
+        bottomToggle: false,
+        amount: 12,
+      },
+
+    }
+
+  }
 
 };
 
