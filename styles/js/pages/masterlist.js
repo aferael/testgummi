@@ -39,12 +39,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 /* ==================================================================== */
 /* Modal Gallery
 ======================================================================= */
-function openModal(modalId, caption) {
+function openModal(modalId) {
   let modal = document.getElementById(modalId);
   modal.style.display = "flex";
   modal.classList.add("show");
-  let message = modal.querySelector(".caption");
-  message.innerText = caption;
 }
 
 function closeModal(modalId) {
@@ -52,6 +50,5 @@ function closeModal(modalId) {
   modal.classList.remove("show");
   setTimeout(function () {
     modal.style.display = "none";
-    modal.querySelector(".caption").innerText = "";
   }, 300);
 };
