@@ -26,7 +26,7 @@ charadex.site = {
 /* ==================================================================== */
 charadex.sheet = {
 
-  id: "1GwgfLizD3HQCieGia6di-TfU4E3EipT9Jb0BDZQwNak",
+  id: "1vep4kZFHW8Ldbc5x1eqbRIoidhkOrzGAubPNcMpEbE4",
 
   pages: {
     masterlist:    "masterlist",
@@ -38,6 +38,8 @@ charadex.sheet = {
     prompts:       "prompts",
     faq:           "faq",
     staff:         "mods",
+    adopts:        "adopts",
+    badges:        "badges",
   },
 
   options: {
