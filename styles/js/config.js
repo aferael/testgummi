@@ -16,8 +16,8 @@ let charadex = {};
 /* Any preview links will still show Charadex's information
 /* ==================================================================== */
 charadex.site = {
-  title: "Charadex",
-  url: "https://charadex-team.github.io/charadex-v1.0/",
+  title: "testgummi",
+  url: "https://aferael.github.io/testgummi/",
   description: `A tool for organizing small ARPGs and species.`
 }
 
