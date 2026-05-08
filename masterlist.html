@@ -221,7 +221,7 @@
           <!-- ----------------------------------------------------------- -->
           <div class="image-tab tab-pane fade active show" id="main" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class="cd-profile-image-container text-center" style="border-radius: 50%; overflow: hidden; width: 100%;">
-          <img class="image img-fluid" src="" onclick="openModal('modal1')">
+          <img class="image img-fluid" src="" onclick="openModal('modal1', 'Main')">
         </div>
           </div>
    
@@ -229,7 +229,7 @@
           <!-- ----------------------------------------------------------- -->
           <div class="image-tab tab-pane fade" id="alt" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class="cd-profile-image-container p-md-5 p-4 text-center" style="border-radius: 50%; overflow: hidden; width: 100%;">
-          <img class="image2 img-fluid" src="" onclick="openModal('modal2')">
+          <img class="image2 img-fluid" src="" onclick="openModal('modal2', 'Alt')">
         </div>
           </div>
  </div>
@@ -401,19 +401,19 @@
           <div class="card bg-faded py-2 px-3 mt-3 small text-center">
             <b>If you need to update this entry, please do so <a href="">here</a>.</b>
           </div>
-
-        </div>
-      </div>
-    </div>
+          
 <div id="modal1" class="modal">
   <span class="close" onclick="closeModal('modal1')">&times;</span>
-  <img src="" class="image modal-content">
+  <img src=""  alt="Main" class="image modal-content">
 </div>
 
 <div id="modal2" class="modal">
   <span class="close" onclick="closeModal('modal2')">&times;</span>
-  <img src="" class="image2 modal-content">
+  <img src=""  alt="Alt" class="image2 modal-content">
 </div>
+        </div>
+      </div>
+    </div>
 
   </div>
 
