@@ -795,7 +795,6 @@ p:last-child {
   margin-bottom: -200px;
   margin-top: -62px;
   width: 61%;
-  height: 29vw;
   z-index: 3;
 }
 .image-tab-align {
@@ -809,4 +808,11 @@ p:last-child {
   position: relative;
   margin-bottom: 78px !important;
 }
-
+@media (max-width: 555px;) {
+  .ml-title-button h3{
+    font-size: 1.25rem;
+  }
+  .ml-title-button h5{
+    font-size: 0.95rem;
+  }
+}
