@@ -9,18 +9,6 @@
 let charadex = {};
 
 /* ==================================================================== */
-/* Site
-/* If you don't want to hard code your site information, you
-/* can fill this out instead
-/* Any preview links will still show Charadex's information
-/* ==================================================================== */
-charadex.site = {
-  title: "Charadex",
-  url: "https://charadex-team.github.io/charadex-v1.0/",
-  description: `A tool for organizing small ARPGs and species.`
-}
-
-/* ==================================================================== */
 /* Sheet Config
 /* Your sheet configuration
 /* ==================================================================== */
@@ -46,10 +34,13 @@ charadex.sheet = {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    rarity: ['All', 'Common', 'Uncommon', 'Rare', 'Very Rare', 'Legendary'],
-    species: ['All', 'Dog', 'Cat', 'Bunny'],
-    itemTypes: ['All', 'Currency', 'MYO Slot', 'Pet', 'Trait', 'Misc'],
-    traitTypes: ['All', 'Ears', 'Eyes', 'Body', 'Limbs', 'Tails', 'Misc', 'Mutations']
+    mlRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Ascended Common', 'Ascended Uncommon' 'Ascended Rare', 'Ascended Mythic'],
+    itemRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Ascended'],
+    traitRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Seasonal - Alignmenttide', 'Seasonal - Bloomfaire', 'Seasonal - Universal Gala', 'Seasonal - Bon Bonival', 'Ascended', 'Ascended - Anion', 'Ascended - Cation'],
+    species: ['All', 'Gummisaur', 'Gummisaur CB', 'Gummisaur? (Cation)', 'Gummisaur? (Anion)'],
+    itemTypes: ['All', 'Currency', 'Konpeito', 'Other Candy', 'Ingredient', 'Misc'],
+    traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
+    adoptTypes: ['All', 'BTA', 'OTA', 'Raffle']
 
   }
 
@@ -88,7 +79,7 @@ charadex.page.items = {
     toggle: true,
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      'Rarity': charadex.sheet.options.itemRarity,
     }
   },
 
@@ -137,7 +128,7 @@ charadex.page.traits = {
     toggle: true,
     parameters: {
       'Type': charadex.sheet.options.traitTypes,
-      'Rarity': charadex.sheet.options.rarity,
+      'Rarity': charadex.sheet.options.traitRarity,
     }
   },
 
@@ -332,7 +323,7 @@ charadex.page.masterlist = {
     parameters: {
       'Design Type': charadex.sheet.options.designTypes,
       'Status': charadex.sheet.options.statuses,
-      'Rarity': charadex.sheet.options.rarity,
+      'Rarity': charadex.sheet.options.mlRarity,
     }
   },
 
@@ -345,7 +336,7 @@ charadex.page.masterlist = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'ID', 'Design', 'Owner', 'Designer', 'Artist', 'Traits']
+    parameters: ['ID', 'Name', 'Owner', 'Designer', 'Artist', 'Subspecies','Basics','Hoard','Gummi','Mutations', 'Status']
   },
 
   prevNext: {
@@ -379,6 +370,57 @@ charadex.page.masterlist = {
     }
 
   }
+
+};
+
+/* Open Adopts Page
+/* --------------------------------------------------------------- */
+charadex.page.adopts = {
+
+  sheetPage: charadex.sheet.pages.adopts,
+  sitePage: 'adopts',
+  dexSelector: 'charadex',
+  profileProperty: 'design',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "desc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Design Type': charadex.sheet.options.designTypes,
+      'Adopt Type': charadex.sheet.options.adoptTypes,
+      'Rarity': charadex.sheet.options.mlRarity,
+    }
+  },
+
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Species',
+    parameters: charadex.sheet.options.species,
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['ID', 'Name', 'Designer', 'Artist']
+  },
+
+  prevNext: {
+    toggle: true,
+  }
+
+}
 
 };
 
@@ -496,7 +538,7 @@ charadex.page.inventory = {
       toggle: true,
       parameters: {
         'Type': charadex.sheet.options.itemTypes,
-        'Rarity': charadex.sheet.options.rarity,
+        'Rarity': charadex.sheet.options.itemRarity,
       }
     },
 
@@ -512,7 +554,7 @@ charadex.page.index = {
   prompts: {
     ... charadex.page.prompts,
     dexSelector: 'prompt',
-    amount: 3,
+    amount: 1,
   },
 
   staff: {
