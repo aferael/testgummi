@@ -807,6 +807,6 @@ p:last-child {
   flex-direction: column;
   width: 50%;
   position: relative;
-  margin-bottom: 78px;
+  margin-bottom: 78px !important;
 }
 
