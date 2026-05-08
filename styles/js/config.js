@@ -8,6 +8,20 @@
 ======================================================================= */
 let charadex = {};
 
+
+/*==================================================================== */
+/* Site
+/* If you don't want to hard code your site information, you
+/* can fill this out instead
+/* Any preview links will still show Charadex's information
+/* ==================================================================== */
+charadex.site = {
+  title: "Charadex",
+  url: "https://charadex-team.github.io/charadex-v1.0/",
+  description: `A tool for organizing small ARPGs and species.`
+}
+
+  
 /* ==================================================================== */
 /* Sheet Config
 /* Your sheet configuration
