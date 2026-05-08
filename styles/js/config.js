@@ -418,7 +418,7 @@ charadex.page.adopts = {
 
   prevNext: {
     toggle: true,
-  }
+  },
 
 };
 
