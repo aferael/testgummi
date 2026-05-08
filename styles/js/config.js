@@ -34,7 +34,7 @@ charadex.sheet = {
 
     designTypes: ['All', 'Official Design', 'Guest Design', 'MYO Slot', 'MYO Design'],
     statuses: ['All', 'Resell', 'Trade', 'Gift', 'Voided', 'For Sale', 'Purchased'],
-    mlRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Ascended Common', 'Ascended Uncommon' 'Ascended Rare', 'Ascended Mythic'],
+    mlRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Ascended Common', 'Ascended Uncommon', 'Ascended Rare', 'Ascended Mythic'],
     itemRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Ascended'],
     traitRarity: ['All', 'Common', 'Uncommon', 'Rare', 'Mythic', 'Seasonal - Alignmenttide', 'Seasonal - Bloomfaire', 'Seasonal - Universal Gala', 'Seasonal - Bon Bonival', 'Ascended', 'Ascended - Anion', 'Ascended - Cation'],
     species: ['All', 'Gummisaur', 'Gummisaur CB', 'Gummisaur? (Cation)', 'Gummisaur? (Anion)'],
