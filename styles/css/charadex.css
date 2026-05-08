@@ -796,6 +796,7 @@ p:last-child {
   margin-top: -62px;
   width: 61%;
   z-index: 3;
+  overflow: hidden;
 }
 .image-tab-align {
   justify-content: center;
