@@ -209,15 +209,42 @@
 
         <!-- Header -->
         <div class="card-header p-4 text-center">
-          <h3 class="mb-0 pr-2"><a class="profilelink profileid"></a></h3> 
-          <div class="text-muted">(#<span class="id"></span>)</div>
+          <h3><a class="name namelink"></a></h3>
+          <h5 class="mb-0 pr-2"><a class="profilelink profileid"></a></h5> 
+          <div class="pl-3 text-pre badges text-center"></div>
         </div>
+        <!-- Image Tabs-->
+ <div class="p-md-5 p-4 tab-content">
 
-        <!-- Image -->
+          <!-- Image 1 Tab
+          <!-- ----------------------------------------------------------- -->
+          <div class="tab-pane fade active show" id="main" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class="cd-profile-image-container p-md-5 p-4 text-center" >
           <img class="image img-fluid" src="">
         </div>
+          </div>
+   
+             <!-- Image 1 Tab
+          <!-- ----------------------------------------------------------- -->
+          <div class="tab-pane fade active show" id="alt" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="cd-profile-image-container p-md-5 p-4 text-center" >
+          <img class="image2 img-fluid" src="">
+        </div>
+          </div>
+ </div>
 
+        <!-- Image Nav Tabs
+        <!-- ----------------------------------------------------------- -->
+        <ul class="nav row n-gutters m-n1 py-4 px-md-5 px-4" id="profile-tabs" role="tablist">
+          <li class="col p-1 nav-item" role="presentation">
+            <a class="w-100 btn btn-primary active" id="profile-tab" data-toggle="tab" href="#main" 
+            aria-controls="profile" aria-selected="true">Main</a>
+          </li>
+          <li class="col p-1 nav-item" role="presentation">
+            <a class="w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#alt" aria-controls="logs" 
+            aria-selected="false">Alt</a>
+          </li>
+        </ul>
 
         <!-- Nav Tabs
         <!-- ----------------------------------------------------------- -->
