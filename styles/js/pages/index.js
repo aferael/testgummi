@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let prompts = await charadex.initialize.page(null, charadex.page.index.prompts, (arr) => {
 
       // Splice the silly little array
-      let sliceAmount = charadex.page.index.prompts.amount || 4;
+      let sliceAmount = charadex.page.index.prompts.amount || 1;
       arr.splice(sliceAmount, arr.length);
 
     }, (data) => {
@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     
   );
 
+    // Filter out everything that says inactive
+  let publicData = scrubbedData.filter(i => !i['inactive']);
 
   /* Staff
   ===================================================================== */
