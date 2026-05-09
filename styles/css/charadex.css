@@ -798,6 +798,13 @@ p:last-child {
   z-index: 3;
   overflow: hidden;
 }
+.image-tab .cd-profile-image-container {
+    max-width: 31em;
+    min-height: 15em;
+    max-height: 31em;
+    height: 443px;
+    align-content: center;
+}
 .image-tab-align {
   justify-content: center;
   position: relative;
