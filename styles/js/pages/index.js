@@ -30,9 +30,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     
   );
 
-    // Filter out everything that says inactive
-  let publicData = scrubbedData.filter(i => !i['inactive']);
-
   /* Staff
   ===================================================================== */
   let staff = await charadex.initialize.page(null, charadex.page.index.staff, (arr) => {
