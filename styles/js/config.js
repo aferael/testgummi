@@ -42,6 +42,7 @@ charadex.sheet = {
     staff:         "mods",
     adopts:        "adopts",
     badges:        "badges",
+    currentEvent:  "current event"
   },
 
   options: {
