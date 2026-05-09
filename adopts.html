@@ -210,179 +210,33 @@
 
         <!-- Header -->
         <div class="btn btn-secondary ml-title-button p-4">
-          <h3><a class="name namelink"></a></h3>
-          <h5 class="mb-0">(<a class="profilelink profileid"></a>)</h5>
+          <h3><a class="adoptname adoptlink"></a></h3>
+          <h5 class="mb-0">(<a class="mllink profileid"></a>)</h5>
         </div>
 
         
-        <!-- Image Tabs-->
- <div class="p-md-5 p-4 tab-content" style="z-index:1; justify-content: center; display: flex;">
+
+ <div class="p-md-5 p-4" style="z-index:1; justify-content: center; display: flex;">
 
           <!-- Image 1 Tab
           <!-- ----------------------------------------------------------- -->
-          <div class="image-tab tab-pane fade active show" id="main" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+          <div class="image-tab" id="main">
         <div class="cd-profile-image-container text-center" style="border-radius: 50%; overflow: hidden; width: 100%;">
           <img class="image img-fluid" src="" onclick="openModal('modal1')">
         </div>
           </div>
-   
-             <!-- Image 1 Tab
-          <!-- ----------------------------------------------------------- -->
-          <div class="image-tab tab-pane fade" id="alt" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-        <div class="cd-profile-image-container p-md-5 p-4 text-center" style="border-radius: 50%; overflow: hidden; width: 100%;">
-          <img class="image2 img-fluid" src="" onclick="openModal('modal2')">
-        </div>
-          </div>
- </div>
 
         <!-- Image Nav Tabs
         <!-- ----------------------------------------------------------- -->
-        <ul class="ml-image-tabs nav row n-gutters m-n1 py-4 px-md-5 px-4" id="profile-tabs" role="tablist">
+        <ul class="ml-image-tabs nav row n-gutters m-n1 py-4 px-md-5 px-4">
           <li class="col p-1 nav-item" role="presentation">
-            <a class="w-100 btn btn-primary active text-left" id="main-tab" data-toggle="tab" href="#main" 
-            aria-controls="main" aria-selected="true">Main</a>
+            <a class="w-100 btn btn-primary active text-left adopttype"></a>
           </li>
           <li class="col p-1 nav-item" role="presentation">
-            <a class="w-100 btn btn-primary text-left" id="alt-tab" data-toggle="tab" href="#alt" aria-controls="alt" 
-            aria-selected="false">Alt</a>
+            <a class="w-100 btn btn-primary active text-left designer designerlink"></a>
           </li>
-        </ul>
-
-        <!-- Nav Tabs
-        <!-- ----------------------------------------------------------- -->
-        <h4 class="text-primary text-center mx-4 d-flex"><hr class="flex-fill">✮⋆˙ <span class="rarity" style="margin-right:7px;"></span><span class="species"></span><span class="subspecies"></span> ˙⋆✮<hr class="flex-fill"></h4>
-        <ul class="nav row n-gutters m-n1 py-4 px-4" id="profile-tabs" role="tablist">
-          <li class="col p-1 nav-item" role="presentation">
-            <a class="w-100 btn btn-primary active" id="profile-tab" data-toggle="tab" href="#profile" 
-            aria-controls="profile" aria-selected="true">Profile</a>
-          </li>
-          <li class="col p-1 nav-item" role="presentation">
-            <a class="w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#logs" aria-controls="logs" 
-            aria-selected="false">Logs</a>
           </li>
         </ul>
-
-
-        <!-- Main Info
-        <!-- ----------------------------------------------------------- -->
-        <div class="p-4 tab-content">
-
-          <!-- Main Profile
-          <!-- ----------------------------------------------------------- -->
-          <div class="tab-pane fade active show" id="profile" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
-            <div class="row no-gutters m-n2">
-
-              <div class="col-md-6 p-2">
-                <div class="card bg-faded p-4 h-100">
-
-                <!-- Item -->
-                            <div class="">
-                                <center><b class="text-muted">✮⋆˙ Basics ˙⋆✮</b></center>
-                                <div class="pl-3 cd-text-pre basics" style="margin-bottom:10px;"></div>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="">
-                                <center><b class="text-muted">✮⋆˙ Hoard ˙⋆✮</b></center>
-                                <div class="pl-3 cd-text-pre hoard" style="margin-bottom:10px;"></div>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="">
-                                <center><b class="text-muted">✮⋆˙ Gummi ˙⋆✮</b></center>
-                                <div class="pl-3 cd-text-pre gummi cd-traits-scroll" style="margin-bottom:10px;"></div>
-                            </div>
-
-                            <!-- Item -->
-                            <div class="">
-                                <center><b class="text-muted">✮⋆˙ Mutations ˙⋆✮</b></center>
-                                <div class="pl-3 cd-text-pre mutations cd-traits-scroll" style="margin-bottom:10px;"></div>
-                            </div>
-
-                </div>
-              </div>
-
-              <div class="col-md-6 p-2">
-                <div class="card bg-faded p-4 h-100">
-                  
-                  <div class="d-flex no-gutters mb-2 justify-content-center">
-                    <div class="pl-3 text-pre badges"></div>
-                  </div>
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Owner</b>
-                    <a class="owner ownerlink"></a>
-                  </div>
-    
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Artist</b>
-                    <a class="artist artistlink"></a>
-                  </div>
-    
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Designer</b>
-                    <a class="designer designerlink"></a>
-                  </div>
-
-                  <hr>
-                  
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Design Type</b>
-                    <span class="designtype"></span>
-                  </div>
-                  
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Value</b>
-                    <span><span class="value"></span></span>
-                  </div>
-    
-                  <!-- Item -->
-                  <div class="d-flex no-gutters mb-2">
-                    <b class="text-muted col-md-5 col-6">Status</b>
-                    <span class="status"></span>
-                  </div>
-
-                  <hr>
-                  
-                  <!-- Item -->
-                  <div>
-                    <b class="text-muted">Notes</b>
-                    <div class="px-4 cd-text-pre notes"></div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          </div>
-          
-          
-          <!-- Logs
-          <!-- ----------------------------------------------------------- -->
-          <div class="tab-pane fade" id="logs" role="tabpanel" aria-labelledby="logs-tab" tabindex="0">
-            <div class="card bg-faded p-4" id="log-gallery">
-
-              <!-- List -->
-              <!-- --------------------------------------------------------------- -->
-              <div class="row no-gutters">
-                <div class="col-md-3"><b>Timestamp</b></div>
-                <div class="col-md-9"><b>Reason</b></div>
-              </div>
-              <hr>
-              <div class="log-list"></div>
-
-              <!-- List Item -->
-              <!-- --------------------------------------------------------------- -->
-              <div style="display: none;">
-                <div class="row no-gutters" id="log-gallery-item">
-                  <div class="col-md-3"><span class="timestamp"></span></div>
-                  <div class="col-md-9"><span class="reason"></span></div>
-                </div>
-              </div>
 
               <!-- Pagination
               <!-- --------------------------------------------------------------- -->
@@ -406,11 +260,6 @@
 <div id="modal1" class="modal">
   <span class="close" onclick="closeModal('modal1')">&times;</span>
   <img src=""  alt="Main" class="image modal-content">
-</div>
-
-<div id="modal2" class="modal">
-  <span class="close" onclick="closeModal('modal2')">&times;</span>
-  <img src=""  alt="Alt" class="image2 modal-content">
 </div>
         </div>
       </div>
