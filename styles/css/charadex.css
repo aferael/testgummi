@@ -847,7 +847,7 @@ p:last-child {
 .modal-content {
   position: relative;
   width: 90%;
-  height: auto;
+  height: 90%;
   max-width: 90%;
   max-height: 90%;
   border-radius: 5px;
