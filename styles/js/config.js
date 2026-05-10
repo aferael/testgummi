@@ -42,7 +42,7 @@ charadex.sheet = {
     staff:         "mods",
     adopts:        "adopts",
     badges:        "badges",
-    events:  "events"
+    events:        "events"
   },
 
   options: {
@@ -56,7 +56,7 @@ charadex.sheet = {
     itemTypes: ['All', 'Currency', 'Konpeito', 'Other Candy', 'Ingredient', 'Misc'],
     traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
-    stock: ['In Stock']
+    stock: ['All', 'In Stock']
 
   }
 
