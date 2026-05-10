@@ -521,7 +521,9 @@ a:active {
   border-radius: 0 0  calc(var(--cd-border-radius) - 1px) calc(var(--cd-border-radius) - 1px) !important;
 }
 
-
+.text-secondary {
+	color: #d185ffcf !important;
+}
 
 /* ============================================================= */
 /* Buttons & Badges
