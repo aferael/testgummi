@@ -37,7 +37,7 @@ body {
    /* ============================================================= */
   /* Text
   ================================================================ */
-  --cd-body-text-color:                  #ad89c4;
+  --cd-body-text-color:                  rgb(228 134 229);
   --cd-faded-text-color:                 #70b6ff;
 
   /* ============================================================= */
@@ -122,7 +122,7 @@ body {
   --cd-navbar-dropdown-link-color-hover: var(--cd-primary-text-color);
 
   /* Divider */
-  --cd-navbar-dropdown-divider:          #f95dff;
+  --cd-navbar-dropdown-divider:          #f95dff5c;
   --cd-navbar-dropdown-border-radius: 0 0 var(--cd-border-radius) var(--cd-border-radius);
 
 
@@ -181,7 +181,7 @@ body {
   ================================================================ */
 
   /* Background */
-  --cd-card-background-color: var(--cd-content-background-color);
+  --cd-card-background-color: var(--cd-navbar-background-color);
   --cd-card-header-background-color: var(--cd-card-background-color);
 
   /* Text */
@@ -349,7 +349,7 @@ a:active {
 
 .navbar .dropdown-menu {
   color: var(--cd-navbar-dropdown-link-color) !important;
-  background-color: var(--cd-navbar-dropdown-background-color) !important;
+  background: var(--cd-navbar-dropdown-background-color) !important;
   border-radius: var(--cd-navbar-dropdown-border-radius) !important;
   border: none;
   margin-top: 0;
@@ -496,7 +496,7 @@ a:active {
 /* ============================================================= */
 
 .card {
-  background-color: var(--cd-card-background-color) !important;
+  background: var(--cd-card-background-color) !important;
   border-width: var(--cd-card-border-width) !important;
   border-style: var(--cd-card-border-style) !important;
   border-color: var(--cd-card-border-color) !important;
