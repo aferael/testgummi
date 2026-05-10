@@ -42,7 +42,7 @@ charadex.sheet = {
     staff:         "mods",
     adopts:        "adopts",
     badges:        "badges",
-    currentEvent:  "current event"
+    events:  "events"
   },
 
   options: {
@@ -107,7 +107,7 @@ charadex.page.items = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Item', 'Rarity']
+    parameters: ['All', 'Item', 'Rarity', 'Stock']
   },
 
   prevNext: {
@@ -172,6 +172,53 @@ charadex.page.prompts = {
 
   sheetPage: charadex.sheet.pages.prompts,
   sitePage: 'prompts',
+  dexSelector: 'charadex',
+  profileProperty: 'title',
+
+  sort: {
+    toggle: true,
+    key: "enddate",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
+
+/* Events
+/* --------------------------------------------------------------- */
+charadex.page.events = {
+
+  sheetPage: charadex.sheet.pages.events,
+  sitePage: 'events',
   dexSelector: 'charadex',
   profileProperty: 'title',
 
