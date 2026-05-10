@@ -32,7 +32,7 @@ body {
   --cd-faded-background-color: #f8f8f8;
 
   /* Background Extras */
-  --cd-body-background-image: url(https://www.picgifs.com/wallpapers/wallpapers/stars/wallpapers-stars-782404.gif);
+  --cd-body-background-image: url(https://i.pinimg.com/originals/8e/ff/81/8eff81d46686e3c82c64565eb09393b9.gif);
 
   /* ============================================================= */
   /* Text
@@ -252,7 +252,7 @@ body {
   background-color: var(--cd-body-background-color);
   background-image: var(--cd-body-background-image);
   background-position: center;
-  background-size: cover;
+  /*background-size: cover;*/
 
 }
 
