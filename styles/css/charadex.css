@@ -788,6 +788,7 @@ p:last-child {
 .image-tab {
   border-radius: 50%;
   background-color: bisque;
+  min-width: 15em;
   max-width: 31em;
   min-height: 15em;
   max-height: 31em;
@@ -802,7 +803,6 @@ p:last-child {
     max-width: 31em;
     min-height: 15em;
     max-height: 31em;
-    height: 443px;
     align-content: center;
 }
 .image-tab-align {
@@ -818,10 +818,16 @@ p:last-child {
 }
 @media (max-width: 555px;) {
   .ml-title-button h3{
-    font-size: 1.25rem;
+    font-size: 1rem !important;
   }
   .ml-title-button h5{
-    font-size: 0.95rem;
+    font-size: 0.85rem !important;
+  }
+  .ml-image-tabs {
+    left: -27px;
+  }
+  .ml-title-button {
+    margin-left: 25px;
   }
 }
 
