@@ -96,7 +96,6 @@ charadex.page.items = {
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
       'Rarity': charadex.sheet.options.itemRarity,
-      'Stock': charadex.sheet.options.stock,
     }
   },
 
