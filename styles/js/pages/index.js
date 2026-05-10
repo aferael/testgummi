@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     arr.splice(sliceAmount, arr.length);
     
     // Filter out any MYO slots, reverse and pull the first 4
-    let selectDesigns = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadex.page.index.designs.amount);
+    let designs = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadex.page.index.designs.amount);
 
   });
                 
