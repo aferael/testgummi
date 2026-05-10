@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
     }; addDesigns();
 
-); 
-
 
   /* Load Page
   ===================================================================== */
