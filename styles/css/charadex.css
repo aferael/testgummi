@@ -51,12 +51,12 @@ body {
   /* ============================================================= */
   /* Navbar
   ================================================================ */
-  --cd-navbar-background-color:          rgba(0,0,0,0.5);
+  --cd-navbar-background-color: linear-gradient(-45deg, #092948d4, #0c0948ad, #2d0948b0, #480944b0) fixed !important;
   --cd-navbar-brand-color: var(--cd-primary-color);
   --cd-navbar-brand-color-hover: var(--cd-secondary-color);
-  --cd-navbar-text-color: var(--cd-content-background-color);
+  --cd-navbar-text-color: rgb(228 134 229);
   --cd-navbar-link-color: var(--cd-navbar-text-color);
-  --cd-navbar-link-color-hover: var(--cd-primary-color);
+  --cd-navbar-link-color-hover: rgb(175 149 251);
   --cd-navbar-font-family: var(--cd-header-font-family);
 
   /* ============================================================= */
@@ -277,7 +277,7 @@ a:active {
 /* Navbar
 /* ============================================================= */
 .navbar {
-  background-color: var(--cd-navbar-background-color) !important;
+  background: var(--cd-navbar-background-color);
   font-family: var(--cd-navbar-font-family) !important;
   z-index: 2000;
 }
@@ -294,11 +294,13 @@ a:active {
 
 .navbar .navbar-nav .nav-link {
   color: var(--cd-navbar-link-color) !important;
+  transition: 0.8s;
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link:focus {
   color: var(--cd-navbar-link-color-hover) !important;
+  transition: 0.8s;
 }
 
 .navbar .navbar-toggler {
@@ -385,8 +387,12 @@ a:active {
 /* ============================================================= */
 
 .footer {
-  background-color: var(--cd-footer-background-color) !important;
+  background: var(--cd-footer-background-color) !important;
   color: var(--cd-footer-text-color) !important;
+	padding: 0 !important;
+}
+.footer p {
+	margin-bottom: -0.3rem !important;
 }
 
 .footer a,
