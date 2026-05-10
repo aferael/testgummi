@@ -91,10 +91,10 @@ body {
   --cd-type-currency-bg: #8D169D;
   --cd-type-currency-txt: #fcf4ed;
 
-  --cd-type-konpeito-bg: #F316FF;
+  --cd-type-konpeito-bg: #D431A3;
   --cd-type-konpeito-txt: var(--cd-type-currency-txt);
   
-  --cd-type-othercandy-bg: #F316FF;
+  --cd-type-othercandy-bg: #3F86D0;
   --cd-type-othercandy-txt: var(--cd-type-currency-txt);
 
   --cd-type-ingredient-bg: #6492F2;
@@ -811,7 +811,7 @@ filter: drop-shadow(2px 4px 6px black);
 }
 
 .badge-konpeito {
-  background-color: var(--cdtype-konpeito-bg);
+  background-color: var(--cd-type-konpeito-bg);
   color: var(--cd-type-konpeito-txt);
 }
 
