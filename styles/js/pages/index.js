@@ -44,13 +44,13 @@ document.addEventListener("DOMContentLoaded", async () => {
    // Designs
     let addDesigns = async () => {
         if ($("#design-gallery").length != 0) {
-            if (charadexInfo.numOfDesigns != 0) {
+            if (charadex.page.index.masterlist.amount != 0) {
 
                 // Grab dah sheet
                 let designs = await charadex.initialize.page(null, charadex.page.index.masterlist);
 
                 // Filter out any MYO slots, reverse and pull the first 4
-                let selectDesigns = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadexInfo.numOfDesigns);
+                let selectDesigns = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, page.index.masterlist.amount);
 
                 // Add cardlink
                 let cardKey = Object.keys(selectDesigns[0])[0];
