@@ -41,15 +41,37 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
 
-  /* Designs
-  ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
-    
-    // Splice the silly little array
-    let sliceAmount = charadex.page.index.designs.amount || 6;
-    arr.splice(sliceAmount, arr.length);
+// Designs
+    let addDesigns = async () => {
+        if ($("#design-gallery").length != 0) {
+            if (charadexInfo.numOfDesigns != 0) {
 
-  });
+                // Grab dah sheet
+                let designs = await fetchSheet(charadexInfo.masterlistSheetPage);
+
+                // Filter out any MYO slots, reverse and pull the first 4
+                let selectDesigns = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadexInfo.numOfDesigns);
+
+                // Add cardlink
+                let cardKey = Object.keys(selectDesigns[0])[0];
+                for (var i in selectDesigns) { selectDesigns[i].cardlink = folderURL + "/masterlist.html?" + cardKey + "=" + selectDesigns[i][cardKey]; }
+
+                // Nyoom
+                let galleryOptions = {
+                    item: 'design-item',
+                    valueNames: sheetArrayKeys(selectDesigns),
+                };
+
+                // Render Gallery
+                let charadex = new List('design-gallery', galleryOptions, selectDesigns);
+
+            } else {
+                $("#design-gallery").hide();
+            }
+        }
+    }; addDesigns();
+
+}; 
 
 
   /* Load Page
