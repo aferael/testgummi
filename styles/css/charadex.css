@@ -78,12 +78,31 @@ body {
   --cd-rarity-rare-bg: #97b34e;
   --cd-rarity-rare-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-veryrare-bg: #548b71;
-  --cd-rarity-veryrare-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-mythic-bg: #548b71;
+  --cd-rarity-mythic-txt: var(--cd-rarity-common-txt);
 
-  /* Legendary & Mythic */
-  --cd-rarity-legendary-bg: #5a473e;
-  --cd-rarity-legendary-txt: var(--cd-rarity-common-txt);
+  --cd-rarity-ascended-bg: #5a473e;
+  --cd-rarity-ascended-txt: var(--cd-rarity-common-txt);
+
+   /* ============================================================= */
+  /* Types
+  ================================================================ */
+
+  --cd-type-currency-bg: #d58353;
+  --cd-type-currency-txt: #fcf4ed;
+
+  --cd-type-konpeito-bg: #e0bb68;
+  --cd-type-konpeito-txt: var(--cd-type-currency-txt);
+  
+  --cd-type-othercandy-bg: #97b34e;
+  --cd-type-othercandy-txt: var(--cd-type-currency-txt);
+
+  --cd-type-ingredient-bg: #548b71;
+  --cd-type-ingredient-txt: var(--cd-type-currency-txt);
+
+  /* ascended */
+  --cd-type-misc-bg: #5a473e;
+  --cd-type-misc-txt: var(--cd-type-currency-txt);
 
 
   /* ============================================================= */
@@ -751,28 +770,28 @@ p:last-child {
 /* ============================================================= */
 
 .badge-currency {
-  background-color: var(--cd-rarity-common-bg);
-  color: var(--cd-rarity-common-txt);
+  background-color: var(--cd-type-currency-bg);
+  color: var(--cd-type-currency-txt);
 }
 
 .badge-konpeito {
-  background-color: var(--cd-rarity-uncommon-bg);
-  color: var(--cd-rarity-uncommon-txt);
+  background-color: var(--cdtype-konpeito-bg);
+  color: var(--cd-type-konpeito-txt);
 }
 
 .badge-othercandy {
-  background-color: var(--cd-rarity-rare-bg);
-  color: var(--cd-rarity-rare-txt);
+  background-color: var(--cd-type-othercandy-bg);
+  color: var(--cd-type-othercandy-txt);
 }
 
 .badge-ingredient {
-  background-color: var(--cd-rarity-veryrare-bg);
-  color: var(--cd-rarity-veryrare-txt);
+  background-color: var(--cd-type-ingredient-bg);
+  color: var(--cd-type-ingredient-txt);
 }
 
 .badge-misc {
-  background-color: var(--cd-rarity-legendary-bg);
-  color: var(--cd-rarity-legendary-txt);
+  background-color: var(--cd-type-misc-bg);
+  color: var(--cd-type-misc-txt);
 }
 
 
@@ -780,24 +799,29 @@ p:last-child {
 /* Rarity
 /* ============================================================= */
 
-.badge-common {
+.badge-common, .badge-ascendedcommon {
   background-color: var(--cd-rarity-common-bg);
   color: var(--cd-rarity-common-txt);
 }
 
-.badge-uncommon {
+.badge-uncommon, .badge-ascendeduncommon {
   background-color: var(--cd-rarity-uncommon-bg);
   color: var(--cd-rarity-uncommon-txt);
 }
 
-.badge-rare {
+.badge-rare, .badge-ascendedrare {
   background-color: var(--cd-rarity-rare-bg);
   color: var(--cd-rarity-rare-txt);
 }
 
-.badge-mythic {
-  background-color: var(--cd-rarity-legendary-bg);
-  color: var(--cd-rarity-legendary-txt);
+.badge-mythic, .badge-ascendedmythic {
+  background-color: var(--cd-rarity-mythic-bg);
+  color: var(--cd-rarity-mythic-txt);
+}
+
+.badge-ascended, .badge-ascended-cation, .badge-ascended-anion {
+  background-color: var(--cd-rarity-ascended-bg);
+  color: var(--cd-rarity-ascended-txt);
 }
 
 /* ============================================================= */
