@@ -745,6 +745,37 @@ p:last-child {
 }
 
 
+
+/* ============================================================= */
+/* Type
+/* ============================================================= */
+
+.badge-currency {
+  background-color: var(--cd-rarity-common-bg);
+  color: var(--cd-rarity-common-txt);
+}
+
+.badge-konpeito {
+  background-color: var(--cd-rarity-uncommon-bg);
+  color: var(--cd-rarity-uncommon-txt);
+}
+
+.badge-othercandy {
+  background-color: var(--cd-rarity-rare-bg);
+  color: var(--cd-rarity-rare-txt);
+}
+
+.badge-ingredient {
+  background-color: var(--cd-rarity-veryrare-bg);
+  color: var(--cd-rarity-veryrare-txt);
+}
+
+.badge-misc {
+  background-color: var(--cd-rarity-legendary-bg);
+  color: var(--cd-rarity-legendary-txt);
+}
+
+
 /* ============================================================= */
 /* Rarity
 /* ============================================================= */
@@ -764,12 +795,6 @@ p:last-child {
   color: var(--cd-rarity-rare-txt);
 }
 
-.badge-veryrare {
-  background-color: var(--cd-rarity-veryrare-bg);
-  color: var(--cd-rarity-veryrare-txt);
-}
-
-.badge-legendary,
 .badge-mythic {
   background-color: var(--cd-rarity-legendary-bg);
   color: var(--cd-rarity-legendary-txt);
