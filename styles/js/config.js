@@ -55,7 +55,8 @@ charadex.sheet = {
     species: ['All', 'Gummisaur', 'Gummisaur CB', 'Gummisaur? (Cation)', 'Gummisaur? (Anion)'],
     itemTypes: ['All', 'Currency', 'Konpeito', 'Other Candy', 'Ingredient', 'Misc'],
     traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
-    adoptTypes: ['All', 'BTA', 'OTA', 'Raffle']
+    adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
+    stock: ['In Stock']
 
   }
 
@@ -95,6 +96,7 @@ charadex.page.items = {
     parameters: {
       'Type': charadex.sheet.options.itemTypes,
       'Rarity': charadex.sheet.options.itemRarity,
+      'Stock': charadex.sheet.options.stock,
     }
   },
 
