@@ -295,6 +295,7 @@ a:active {
 .navbar .navbar-nav .nav-link {
   color: var(--cd-navbar-link-color) !important;
   transition: 0.8s;
+  font-size: 1.2rem;
 }
 
 .navbar .navbar-nav .nav-link:hover,
@@ -320,7 +321,7 @@ a:active {
 
 /* This is for the Custom Scaling Image at the top of the page */
 .navbar-brand img {
-  max-width: 500px;
+  max-width: 450px;
   width: 50%;
   top: 0px;
   position: absolute;
@@ -352,7 +353,7 @@ a:active {
   background: var(--cd-navbar-dropdown-background-color) !important;
   border-radius: var(--cd-navbar-dropdown-border-radius) !important;
   border: none;
-  margin-top: 0;
+  margin-top: 24px;
 }
 
 .dropdown:hover .dropdown-menu,
