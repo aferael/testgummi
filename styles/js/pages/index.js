@@ -42,6 +42,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 
    // Designs
+  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
     let addDesigns = async () => {
         if ($("#design-gallery").length != 0) {
             if (charadex.page.index.designs.amount != 0) {
@@ -70,7 +71,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             }
         }
     }; addDesigns();
-
+  };
 
   /* Load Page
   ===================================================================== */
