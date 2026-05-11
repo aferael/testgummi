@@ -210,7 +210,7 @@ body {
   ================================================================ */
 
   /* Background */
-  --cd-button-background-color: rgba(129, 86, 114, 0.3);
+  --cd-button-background-color: rgba(156, 86, 187, 0.52);
   --cd-button-background-color-hover: #f95dffdb;
 
   /* Text */
@@ -566,6 +566,14 @@ a.badge.badge-primary:active {
   box-shadow: none !important;
 }
 
+.btn.btn-secondary {
+	color: #d185ffcf !important;
+	background: linear-gradient(-45deg, #092948d4, #0c0948ad, #2d0948b0, #480944b0) fixed !important;
+    border-width: var(--cd-card-border-width) !important;
+    border-style: var(--cd-card-border-style) !important;
+    border-color: var(--cd-card-border-color) !important;
+}
+
 /* ============================================================= */
 /* Input
 /* ============================================================= */
@@ -903,7 +911,8 @@ filter: drop-shadow(2px 4px 6px black);
 }
 .image-tab {
   border-radius: 50%;
-  background-color: bisque;
+    background: url('https://sbcode.net/topoearth/downloads/moon_texture.5400x2700.jpg');
+    background-size: cover;
   min-width: 15em;
   max-width: 31em;
   min-height: 15em;
@@ -932,7 +941,7 @@ filter: drop-shadow(2px 4px 6px black);
   position: relative;
   margin-bottom: 78px !important;
 }
-@media (max-width: 555px;) {
+@media (max-width: 555px) {
   .ml-title-button h3{
     font-size: 1rem !important;
   }
@@ -941,10 +950,22 @@ filter: drop-shadow(2px 4px 6px black);
   }
   .ml-image-tabs {
     left: -27px;
+	padding-left: 0 !important;
+	max-height: 14em;
   }
-  .ml-title-button {
-    margin-left: 25px;
+   .cd-profile-image-container > img {
+	max-height: 14em;
+	}
+    m.ml-title-button {
+    width: 100%;
+    position: relative;
+    text-align: right;
+    left: 0;
   }
+	#profile-tabs {
+	margin-top: -112px !important;
+    margin-bottom: -30px !important;
+	}
 }
 
 
@@ -975,6 +996,7 @@ filter: drop-shadow(2px 4px 6px black);
   border-radius: 5px;
   overflow: hidden;
   animation: zoomIn 0.5s;
+  background-color: transparent;
 }
 
 @keyframes zoomIn {
