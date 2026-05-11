@@ -950,9 +950,15 @@ filter: drop-shadow(2px 4px 6px black);
   }
   .ml-image-tabs {
     left: -27px;
-	padding-left: 0 !important;
+    padding-left: 25px !important;
 	max-height: 14em;
   }
+	.species-title {
+	margin-top: 75px;
+	}
+	.image-container {
+	margin-top: 40px;
+	}
    .cd-profile-image-container > img {
 	max-height: 14em;
 	}
@@ -996,6 +1002,10 @@ filter: drop-shadow(2px 4px 6px black);
   overflow: hidden;
   animation: zoomIn 0.5s;
   background-color: transparent;
+}
+
+.caption{
+	font-color: transparent;
 }
 
 @keyframes zoomIn {
