@@ -1006,7 +1006,7 @@ filter: drop-shadow(2px 4px 6px black);
 }
 
 .caption{
-	font-color: transparent;
+	color: transparent;
 }
 
 @keyframes zoomIn {
