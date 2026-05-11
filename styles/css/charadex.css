@@ -924,6 +924,9 @@ filter: drop-shadow(2px 4px 6px black);
   z-index: 3;
   overflow: hidden;
 }
+.image-tab-alt {
+	background: url('https://newsreel.com.au/wp-content/uploads/2026/04/Moon-Surface.jpg') !important;
+}
 .image-tab .cd-profile-image-container {
     max-width: 31em;
     min-height: 15em;
