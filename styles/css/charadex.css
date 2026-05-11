@@ -956,15 +956,14 @@ filter: drop-shadow(2px 4px 6px black);
    .cd-profile-image-container > img {
 	max-height: 14em;
 	}
-    m.ml-title-button {
+    .ml-title-button {
     width: 100%;
     position: relative;
     text-align: right;
     left: 0;
   }
 	#profile-tabs {
-	margin-top: -112px !important;
-    margin-bottom: -30px !important;
+    margin-bottom: -15px !important;
 	}
 }
 
