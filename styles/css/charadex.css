@@ -956,7 +956,7 @@ filter: drop-shadow(2px 4px 6px black);
 	.species-title {
 	margin-top: 75px;
 	}
-	.image-container {
+	.image-containter {
 	margin-top: 40px;
 	}
    .cd-profile-image-container > img {
@@ -967,6 +967,7 @@ filter: drop-shadow(2px 4px 6px black);
     position: relative;
     text-align: right;
     left: 0;
+	top: -95px;
   }
 	#profile-tabs {
     margin-bottom: -15px !important;
