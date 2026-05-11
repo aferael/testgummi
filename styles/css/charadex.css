@@ -625,7 +625,7 @@ a.badge.badge-primary:active {
 /* ============================================================= */
 
 .text-primary {
-  color: var(--cd-primary-color) !important;
+  color: rgb(120 155 237) !important;
 }
 
 .bg-faded {
