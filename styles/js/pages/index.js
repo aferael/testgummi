@@ -15,12 +15,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Splice the silly little array
       let sliceAmount = charadex.page.index.events.amount || 1;
-      arr.splice(sliceAmount, arr.length);
+      arr.filter((i) => { return i.eventcurrent != 'FALSE' }).splice(sliceAmount, arr.length);
 
     }, (data) => {
 
       // Add the silly little prompt stuff here too
-      $('.cd-prompt-background').each(function(i) {
+      $('.cd-event-background').each(function(i) {
         const element = $(this);
         const image = data.array[i]?.image;
         element.attr('style', `background-image: url(${image})`);
