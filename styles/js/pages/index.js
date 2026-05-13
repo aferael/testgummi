@@ -9,12 +9,12 @@ import { charadex } from '../charadex.js';
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
 
-  /* Prompts
+  /* events
   ===================================================================== */
-  let prompts = await charadex.initialize.page(null, charadex.page.index.prompts, (arr) => {
+  let events = await charadex.initialize.page(null, charadex.page.index.events, (arr) => {
 
       // Splice the silly little array
-      let sliceAmount = charadex.page.index.prompts.amount || 1;
+      let sliceAmount = charadex.page.index.events.amount || 1;
       arr.splice(sliceAmount, arr.length);
 
     }, (data) => {
