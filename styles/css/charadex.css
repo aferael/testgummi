@@ -676,10 +676,10 @@ img {
 	flex-direction: column;
 }
 
-.charadex-filters {
+#charadex-filters {
 	justify-content: space-between;
 }
-.charadex-folders {
+#charadex-folders, .designs-list, .charadex-list {
 	justify-content: center;
 }
 
