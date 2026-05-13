@@ -334,7 +334,7 @@ a:active {
 .navbar-brand img {
   max-width: 370px;
   width: 50%;
-  top: 13px;
+  top: 0px;
   position: absolute;
 }
 
