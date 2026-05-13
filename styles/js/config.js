@@ -56,7 +56,8 @@ charadex.sheet = {
     itemTypes: ['All', 'Currency', 'Konpeito', 'Other Candy', 'Ingredient', 'Misc'],
     traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
-    stock: ['All', 'In Stock']
+    stock: ['All', 'In Stock'],
+    badgeTypes: ['All']
 
   }
 
@@ -158,6 +159,49 @@ charadex.page.traits = {
     toggle: true,
     filterToggle: true,
     parameters: ['All', 'Trait', 'Rarity']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
+
+/* Badges
+/* --------------------------------------------------------------- */
+charadex.page.badges = {
+
+  sheetPage: charadex.sheet.pages.badges,
+  sitePage: 'badges',
+  dexSelector: 'charadex',
+  profileProperty: 'badge',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 24,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Type': charadex.sheet.options.badge
+        Types,
+    }
+  },
+
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Badge', 'Source']
   },
 
   prevNext: {
