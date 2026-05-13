@@ -57,7 +57,8 @@ charadex.sheet = {
     traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
     stock: ['All', 'In Stock'],
-    badgeTypes: ['All']
+    badgeTypes: ['All'],
+    eventCurrent: ['All', 'TRUE', 'FALSE]
 
   }
 
