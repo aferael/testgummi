@@ -40,19 +40,20 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   });
 
-
-  /* Designs
+  
+/* Designs
   ===================================================================== */
-  let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
-    
-    // Splice the silly little array
-    let sliceAmount = charadex.page.index.designs.amount || 6;
-    arr.splice(sliceAmount, arr.length);
-    
-    // Filter out any MYO slots, reverse and pull the first 4
-    let designs = designs.filter((i) => { return i.designtype != 'MYO Slot' }).reverse().slice(0, charadex.page.index.designs.amount);
+let designs = await charadex.initialize.page(null, charadex.page.index.designs, (arr) => {
+  // Force sliceAmount to 4
+  let sliceAmount = 4;
 
-  });
+  // Get the last 4 (or fewer if less than 4 exist)
+  let recent = arr.slice(-sliceAmount);
+
+  // Overwrite original array in-place
+  arr.length = 0;
+  arr.push(...recent);
+});
                 
   /* Load Page
   ===================================================================== */
