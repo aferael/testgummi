@@ -332,7 +332,7 @@ a:active {
 
 /* This is for the Custom Scaling Image at the top of the page */
 .navbar-brand img {
-  max-width: 450px;
+  max-width: 370px;
   width: 50%;
   top: 0px;
   position: absolute;
@@ -364,7 +364,6 @@ a:active {
   background: var(--cd-navbar-dropdown-background-color) !important;
   border-radius: var(--cd-navbar-dropdown-border-radius) !important;
   border: none;
-  margin-top: 24px;
 }
 
 .dropdown:hover .dropdown-menu,
@@ -673,6 +672,10 @@ img {
   border-radius: 0 !important;
 }
 
+.staff-list {
+	flex-direction: column;
+}
+
 
 /* ============================================================= */
 /* Loading
@@ -746,7 +749,7 @@ p:last-child {
 
 /* Small container for more compact view */
 .container {
-  max-width: 950px !important;
+  max-width: 1130px !important;
 }
 
 /* ============================================================= */
