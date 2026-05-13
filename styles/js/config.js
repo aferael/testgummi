@@ -683,9 +683,9 @@ charadex.page.inventory = {
 /* --------------------------------------------------------------- */
 charadex.page.index = {
 
-  prompts: {
-    ... charadex.page.prompts,
-    dexSelector: 'prompt',
+  events: {
+    ... charadex.page.events,
+    dexSelector: 'event',
     amount: 1,
   },
 
