@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
       // Splice the silly little array
       let sliceAmount = charadex.page.index.events.amount || 1;
-      arr.filter((i) => { return i.eventcurrent != 'FALSE' }).splice(sliceAmount, arr.length);
+      arr.splice(sliceAmount, arr.length);
 
     }, (data) => {
 
