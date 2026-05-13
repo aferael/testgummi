@@ -676,6 +676,13 @@ img {
 	flex-direction: column;
 }
 
+.charadex-filters {
+	justify-content: space-between;
+}
+.charadex-folders {
+	justify-content: center;
+}
+
 
 /* ============================================================= */
 /* Loading
