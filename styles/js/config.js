@@ -58,7 +58,7 @@ charadex.sheet = {
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
     stock: ['All', 'In Stock'],
     badgeTypes: ['All'],
-    eventCurrent: ['All', 'TRUE', 'FALSE]
+    eventCurrent: ['All', 'TRUE', 'FALSE']
 
   }
 
