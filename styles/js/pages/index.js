@@ -49,7 +49,7 @@ let designs = await charadex.initialize.page(null, charadex.page.index.designs, 
   // Remove MYO Slots from Selection
   
   // Get the last 4 (or fewer if less than 4 exist)
-  let recent = designs.filter((i) => { return i.designtype != 'MYO Slot' }).slice(-sliceAmount);
+  let recent = arr.filter((i) => { return i.designtype != 'MYO Slot' }).slice(-sliceAmount);
 
   // Overwrite original array in-place
   arr.length = 0;
