@@ -682,6 +682,10 @@ img {
 #charadex-folders, .designs-list, .charadex-list {
 	justify-content: center;
 }
+.cd-event-background {
+	height: 375px; 
+	background-position: center;
+}
 
 
 /* ============================================================= */
