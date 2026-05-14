@@ -682,11 +682,19 @@ img {
 #charadex-folders, .designs-list, .charadex-list {
 	justify-content: center;
 }
-.cd-event-background {
-	height: 375px; 
-	background-position: center;
-}
+@media (max-width:510px){
+	.index-row {
+		flex-direction: column;
+	}
+	#event-gallery {
+		margin-bottom: 15px;
+	}
 
+	.staff-list {
+		flex-direction: row;
+  	  justify-content: space-evenly;
+	}
+}
 
 /* ============================================================= */
 /* Loading
