@@ -835,7 +835,7 @@ p:last-child {
   }
 }
 
-.hero-title .m-auto {
+.cd-hero-title .m-auto {
 filter: drop-shadow(2px 4px 6px black);
     text-align: center;
 }
