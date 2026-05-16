@@ -592,6 +592,12 @@ a.badge.badge-primary:active {
   border-color: var(--cd-input-border-color-hover) !important;
 }
 
+option {
+	background-color: var(--cd-input-background-color) !important;
+	border-width: var(--cd-input-border-width) !important;
+    border-style: var(--cd-input-border-style) !important;
+    border-color: var(--cd-input-border-color) !important;
+}
 
 /* ============================================================= */
 /* Scrollbar
