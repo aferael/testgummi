@@ -629,7 +629,7 @@ option {
 /* Misc
 /* ============================================================= */
 
-.text-primary {
+.text-primary, span {
   color: rgb(120 155 237) !important;
 }
 
