@@ -70,11 +70,11 @@
     <div class="p-md-5 p-4 tab-content">
       <!-- Gummisaurs Tab -->
     <div class="tab-pane fade active show" id="gummisaurs">
-       <ul class="row justify-content-around" style="margin-top: 10px;">
-        	<li class="btn btn-primary d-block mb1 nav-link"><a data-toggle="tab" href="#introgummi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Introduction</a></li> 
-			<li class="btn btn-primary d-block mb1 nav-link"><a data-toggle="tab" href="#anatomygummi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Anatomy</a></li> 
-			<li class="btn btn-primary d-block mb1 nav-link"><a data-toggle="tab" href="#ecologygummi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Ecology</a></li> 
-		</ul>
+       <div class="row justify-content-around" style="margin-top: 10px;">
+        	<a class="btn btn-primary d-block mb1 nav-link" data-toggle="tab" href="#introgummi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Introduction</a>
+			<a class="btn btn-primary d-block mb1 nav-link" data-toggle="tab" href="#anatomygummi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Anatomy</a> 
+			<a class="btn btn-primary d-block mb1 nav-link" data-toggle="tab" href="#ecologygummi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Ecology</a> 
+		</div>
 
       <!-- General Info
       <-------------------------------------------------------------------- -->
@@ -312,9 +312,9 @@ Sometimes, this has the odd effect of traits similar to the original gummi showi
       <!-- Leviathans Tab -->
       <div class="tab-pane fade" id="leviathans">
        <div class="row justify-content-around" style="margin-top: 10px;">
-        <a class="btn btn-primary d-block mb1 active" data-toggle="tab" href="#introlevi" style="text-decoration:none; width: 33%;">Introduction</a> 
-				<a class="btn btn-primary d-block mb1" data-toggle="tab" href="#anatomylevi" style="text-decoration:none; width: 33%;">Anatomy</a>  
-				<a class="btn btn-primary d-block mb1" data-toggle="tab" href="#ecologylevi" style="text-decoration:none; width: 33%;">Ecology</a>
+        <a class="btn btn-primary d-block mb1 active" data-toggle="tab" href="#introlevi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Introduction</a> 
+				<a class="btn btn-primary d-block mb1" data-toggle="tab" href="#anatomylevi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Anatomy</a>  
+				<a class="btn btn-primary d-block mb1" data-toggle="tab" href="#ecologylevi" style="text-decoration:none; width: 33%;" onclick="$(this).removeClass('active');">Ecology</a>
 			 </div>
 
       <!-- General Info
