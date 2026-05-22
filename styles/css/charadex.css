@@ -629,8 +629,12 @@ option {
 /* Misc
 /* ============================================================= */
 
-.text-primary, span {
+.text-primary, span, b {
   color: rgb(120 155 237) !important;
+}
+
+.card-body {
+	padding:0;
 }
 
 .bg-faded {
@@ -715,6 +719,10 @@ img {
     background: rgba(0, 0, 0, 0.4);
     padding: 5px;
     margin-bottom: -10px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
 }
 /* ============================================================= */
 /* Loading
