@@ -701,7 +701,21 @@ img {
   	  justify-content: space-evenly;
 	}
 }
-
+.planet-img {
+    border-radius: 15px;
+    background-size: cover !important;
+    background-position: center !important;
+    margin-left: 3% !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.credit-span {
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    margin-bottom: -10px;
+}
 /* ============================================================= */
 /* Loading
 /* ============================================================= */
