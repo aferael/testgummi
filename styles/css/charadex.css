@@ -15,7 +15,7 @@ body {
   /* ============================================================= */
   /* Primary Color
   ================================================================ */
-  --cd-primary-color:                    rgba(0,0,0,0.3);
+  --cd-primary-color:                    #480944eb;
   --cd-primary-text-color:               #70b6ff;
 
   /* ============================================================= */
@@ -69,28 +69,28 @@ body {
   /* Rarities
   ================================================================ */
 
-  --cd-rarity-common-bg: #A6A6A6;
+  --cd-rarity-common-bg: #35FBE8;
   --cd-rarity-common-txt: #180928;
 
-  --cd-rarity-uncommon-bg: #F145BE;
+  --cd-rarity-uncommon-bg: #1070FE;
   --cd-rarity-uncommon-txt: var(--cd-rarity-common-txt);
   
-  --cd-rarity-rare-bg: #45E6F1;
+  --cd-rarity-rare-bg: #FE11B5;
   --cd-rarity-rare-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-mythic-bg: #C371E6;
+  --cd-rarity-mythic-bg: #B311FF;
   --cd-rarity-mythic-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-ascended-bg: #03D3C7;
+  --cd-rarity-ascended-bg: #05DC79;
   --cd-rarity-ascended-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-seasonal-alignmenttide-bg: #90F8FF;
+  --cd-rarity-seasonal-alignmenttide-bg: #AFDBF7;
   --cd-rarity-seasonal-alignmenttide-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-seasonal-bloomfaire-bg: #7ADBA9;
+  --cd-rarity-seasonal-bloomfaire-bg: #ABEF9A;
   --cd-rarity-seasonal-bloomfaire-txt: var(--cd-rarity-common-txt);
 
-  --cd-rarity-seasonal-universalgala-bg: #D9E9FF;
+  --cd-rarity-seasonal-universalgala-bg: #E0C7FF;
   --cd-rarity-seasonal-universalgala-txt: var(--cd-rarity-common-txt);
 
   --cd-rarity-seasonal-bonbonival-bg: #FF84DA;
@@ -593,7 +593,7 @@ a.badge.badge-primary:active {
 }
 
 option {
-	background-color: var(--cd-input-background-color) !important;
+	background-color: rgb(63 4 95) !important;
 	border-width: var(--cd-input-border-width) !important;
     border-style: var(--cd-input-border-style) !important;
     border-color: var(--cd-input-border-color) !important;
@@ -630,7 +630,7 @@ option {
 /* ============================================================= */
 
 .text-primary, span, b {
-  color: rgb(120 155 237) !important;
+  color: var(--cd-link-text-color);
 }
 
 .card-body {
