@@ -8,7 +8,7 @@ import { charadex } from '../charadex.js';
 /* Load
 ======================================================================= */
 document.addEventListener("DOMContentLoaded", async () => {
-  let dex = await charadex.initialize.page(null, charadex.page.events, null, 
+  let dex = await charadex.initialize.page(null, charadex.page.factions, null, 
   (listData) => {
     let backgroundElement = $('.cd-prompt-background');
     if (listData.type == 'profile') {
