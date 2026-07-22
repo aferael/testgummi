@@ -19,8 +19,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         $(this).attr('style', `background-image: url(${image})`);
       });
     }
+    const progressValue = parseFloat('progress');
     if (!isNaN(progressValue)) {
-            const progressBar = document.getElementById("Progress");
+            const progressBar = document.getElementById("sheet-progress");
             progressBar.value = progressValue;
     }
   });
