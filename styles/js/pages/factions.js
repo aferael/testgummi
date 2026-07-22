@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     if (!isNaN(progressValue)) {
             const progressBar = document.getElementById("Progress");
             progressBar.value = progressValue;
+    }
   });
   charadex.tools.loadPage('.softload', 500);
 });
