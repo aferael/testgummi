@@ -42,7 +42,8 @@ charadex.sheet = {
     staff:         "mods",
     adopts:        "adopts",
     badges:        "badges",
-    events:        "events"
+    events:        "events",
+    factions:      "factions"
   },
 
   options: {
@@ -297,6 +298,52 @@ charadex.page.events = {
     toggle: true,
     filterToggle: false,
     parameters: ['Title']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
+
+/* Events
+/* --------------------------------------------------------------- */
+charadex.page.factions = {
+
+  sheetPage: charadex.sheet.pages.factions,
+  sitePage: 'factions',
+  dexSelector: 'charadex',
+  profileProperty: 'faction',
+
+  sort: {
+    toggle: true,
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 12,
+  },
+
+  filters: {
+    toggle: false,
+    parameters: {
+      'TBA': [],
+    }
+  },
+
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
+
+  search: {
+    toggle: true,
+    filterToggle: false,
+    parameters: ['Faction']
   },
 
   prevNext: {
