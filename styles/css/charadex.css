@@ -1083,3 +1083,11 @@ filter: drop-shadow(2px 4px 6px black);
   cursor: pointer;
   transition: transform 0.3s;
 }
+
+/* Progress Bars */
+.progress {
+	background-color: var(--cd-secondary-color);
+}
+.progress-track {
+	background-color:   var(--cd-primary-color);
+}
