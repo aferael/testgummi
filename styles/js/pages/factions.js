@@ -25,7 +25,7 @@ async function updateProgress() {
   
   // Parse your specific row/column value from the CSV text output
   const rows = data.split('\n');
-  const currentValue = parseFloat(columns[9]); // adjust index based on your cell position
+  const currentValue = parseFloat(columns[9]); // adjust index based on cell position
   
   // Update the div width
   const progressBar = document.getElementById('progress-bar');
