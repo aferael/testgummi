@@ -20,8 +20,6 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 async function updateProgress() {
-  const response = await fetch(url);
-  const data = await response.text();
   
   // Parse your specific row/column value from the CSV text output
   const rows = data.split('\n');
