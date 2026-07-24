@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       });
     }
 async function updateProgress() {
+  const url = 'https://docs.google.com/spreadsheets/d/1vep4kZFHW8Ldbc5x1eqbRIoidhkOrzGAubPNcMpEbE4';
+  const response = await fetch(url);
+  const data = await response.text();
   
   // Parse your specific row/column value from the CSV text output
   const rows = data.split('\n');
