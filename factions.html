@@ -219,18 +219,19 @@
 
         <!-- Body -->
         <div class="card-body p-md-5 p-4 d-flex flex-column flex-fill">
-          <hr class="my-4 mx-0">
           <div class="justify-space-between">
-              <b>Level:</b> <span class="level"></span>
-              <b>XP:</b> <span class="progress"></span>
+              <h2 class="text-center">Level <span class="level"></span></h2>
+            <div class="progress-track">
+              <div id="progress-bar" style="width: 0%; height: 24px; background-color: #4CAF50;"></div>
+            </div>
           </div>
           <div class="row no-gutters text-muted m-n1 px-3 small">
-            <div class="col p-1">
+            <div class="col p-2">
               <b>Leader:</b> <a class="leader leaderlink"></a>
               <hr class="my-4 mx-0">
               <span class="members cd-text-pre"></span>
             </div>
-            <div class="col p-1"><span class="cd-text-pre description"></span></div>
+            <div class="col p-2"><span class="cd-text-pre description"></span></div>
           </div>
         </div>
         
