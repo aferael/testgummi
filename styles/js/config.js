@@ -306,7 +306,7 @@ charadex.page.events = {
 
 };
 
-/* Events
+/* Factions
 /* --------------------------------------------------------------- */
 charadex.page.factions = {
 
@@ -688,6 +688,22 @@ charadex.page.inventory = {
 
     }
 
+
+        [charadex.sheet.pages.badges]: {
+
+      // This imports the config from the masterlist
+      // So you dont have to repeat yourself
+      ...charadex.page.badges, 
+
+      sheetPage: charadex.sheet.pages.badges,
+      sitePage: 'badges',
+      primaryProperty: 'username',
+      relatedProperty: 'username',
+      dexSelector: 'badge',
+      profileProperty: 'ID',
+      profileToggle: false,
+
+    }
   },
 
   
