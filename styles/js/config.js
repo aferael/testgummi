@@ -212,6 +212,47 @@ charadex.page.badges = {
 
 };
 
+/* Badge Collection
+/* --------------------------------------------------------------- */
+charadex.page.badgeCollection = {
+
+  sheetPage: charadex.sheet.pages.badgeCollection,
+  sitePage: 'badges',
+  dexSelector: 'charadex',
+  profileProperty: 'badge',
+
+  sort: {
+    toggle: true,
+    key: "id",
+    order: "asc",
+    parameters: []
+  },
+
+  pagination: {
+    toggle: true,
+    bottomToggle: true,
+    amount: 24,
+  },
+
+  filters: {
+    toggle: true,
+    parameters: {
+      'Type': charadex.sheet.options.badgeTypes,
+    }
+  },
+
+
+  search: {
+    toggle: true,
+    filterToggle: true,
+    parameters: ['All', 'Badge', 'Source']
+  },
+
+  prevNext: {
+    toggle: true,
+  },
+
+};
 
 /* Prompts
 /* --------------------------------------------------------------- */
