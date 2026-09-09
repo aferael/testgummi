@@ -34,7 +34,15 @@ document.addEventListener("DOMContentLoaded", async () => {
             charadex.page.inventory.relatedData['masterlist'],
           );
         }
-
+        
+        // Badges
+        if (charadex.tools.checkArray(profile.badges)) {
+          let badges = await charadex.initialize.page(
+            profile.badges,
+            charadex.page.inventory.relatedData['badges'],
+          );
+        }
+        
         // Logs
         if (charadex.tools.checkArray(profile.inventorylog)) {
           let logs = await charadex.initialize.page(
