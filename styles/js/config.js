@@ -219,7 +219,6 @@ charadex.page.badgeCollection = {
   sheetPage: charadex.sheet.pages.badgeCollection,
   sitePage: 'badge collection',
   dexSelector: 'charadex',
-  profileProperty: 'badge',
   profileProperty: 'username',
   
   sort: {
