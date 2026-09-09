@@ -687,7 +687,7 @@ charadex.page.inventory = {
       profileProperty: 'design',
       profileToggle: false,
 
-    }
+    },
 
 
         [charadex.sheet.pages.badgeCollection]: {
@@ -705,7 +705,7 @@ charadex.page.inventory = {
       profileToggle: false,
 
     }
-  }
+  },
 
   
   // This is a special config for their inventory
