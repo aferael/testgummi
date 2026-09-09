@@ -43,7 +43,8 @@ charadex.sheet = {
     adopts:        "adopts",
     badges:        "badges",
     events:        "events",
-    factions:      "factions"
+    factions:      "factions",
+    badgeCollection: "badge collection"
   },
 
   options: {
@@ -58,7 +59,7 @@ charadex.sheet = {
     traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
     stock: ['All', 'In Stock'],
-    badgeTypes: ['All'],
+    badgeTypes: ['All', 'Character', 'User'],
     eventCurrent: ['All', 'TRUE', 'FALSE']
 
   }
@@ -689,17 +690,17 @@ charadex.page.inventory = {
     }
 
 
-        [charadex.sheet.pages.badgecollection]: {
+        [charadex.sheet.pages.badgeCollection]: {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
       ...charadex.page.badges, 
 
-      sheetPage: charadex.sheet.pages.badgecollection,
+      sheetPage: charadex.sheet.pages.badgeCollection,
       sitePage: 'badges',
       primaryProperty: 'username',
       relatedProperty: 'username',
-      dexSelector: 'badge',
+      dexSelector: 'badge collection',
       profileProperty: 'ID',
       profileToggle: false,
 
