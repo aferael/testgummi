@@ -705,7 +705,7 @@ charadex.page.inventory = {
       profileToggle: false,
 
     }
-  },
+  }
 
   
   // This is a special config for their inventory
