@@ -689,13 +689,13 @@ charadex.page.inventory = {
     }
 
 
-        [charadex.sheet.pages.badges]: {
+        [charadex.sheet.pages.badgecollection]: {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
       ...charadex.page.badges, 
 
-      sheetPage: charadex.sheet.pages.badges,
+      sheetPage: charadex.sheet.pages.badgecollection,
       sitePage: 'badges',
       primaryProperty: 'username',
       relatedProperty: 'username',
