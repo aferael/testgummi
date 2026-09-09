@@ -217,10 +217,11 @@ charadex.page.badges = {
 charadex.page.badgeCollection = {
 
   sheetPage: charadex.sheet.pages.badgeCollection,
-  sitePage: 'badges',
+  sitePage: 'badge collection',
   dexSelector: 'charadex',
   profileProperty: 'badge',
-
+  profileProperty: 'username',
+  
   sort: {
     toggle: true,
     key: "id",
@@ -251,6 +252,27 @@ charadex.page.badgeCollection = {
   prevNext: {
     toggle: true,
   },
+  badgeCollectionConfig: {
+
+    sheetPage: charadex.sheet.pages.badges,
+    sitePage: 'badges',
+    dexSelector: 'badge collection',
+    profileProperty: 'badge',
+    profileToggle: false,
+
+    sort: {
+      toggle: true,
+      sortProperty: "badge",
+      order: "asc",
+      parametersKey: 'type', 
+      parameters: charadex.sheet.options.BadgeTypes
+    },
+
+    search: {
+      toggle: true,
+      filterToggle: false,
+      parameters: ['Badges']
+    },
 
 };
 
