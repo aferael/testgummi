@@ -36,10 +36,10 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         
         // Badges
-        if (charadex.tools.checkArray(profile.badges)) {
+        if (charadex.tools.checkArray(profile.badgeCollection)) {
           let badges = await charadex.initialize.page(
-            profile.badges,
-            charadex.page.inventory.relatedData['badges'],
+            profile.badgeCollection,
+            charadex.page.inventory.relatedData['badge collection'],
           );
         }
         
