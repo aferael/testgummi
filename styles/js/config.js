@@ -271,7 +271,9 @@ charadex.page.badgeCollection = {
       toggle: true,
       filterToggle: false,
       parameters: ['Badges']
+     }
     },
+
 
 };
 
