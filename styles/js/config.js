@@ -761,11 +761,11 @@ charadex.page.inventory = {
       ...charadex.page.badges, 
 
       sheetPage: charadex.sheet.pages.badgeCollection,
-      sitePage: 'badges',
+      sitePage: 'badge collection',
       primaryProperty: 'username',
       relatedProperty: 'username',
       dexSelector: 'badge collection',
-      profileProperty: 'ID',
+      profileProperty: 'badge',
       profileToggle: false,
 
     }
