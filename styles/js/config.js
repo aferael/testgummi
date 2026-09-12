@@ -44,7 +44,7 @@ charadex.sheet = {
     badges:        "badges",
     events:        "events",
     factions:      "factions",
-    collection: "collection"
+    collection:     "collection"
   },
 
   options: {
@@ -60,7 +60,7 @@ charadex.sheet = {
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
     stock: ['All', 'In Stock'],
     badgesTypes: ['All', 'Character', 'User'],
-    eventCurrent: ['All', 'TRUE', 'FALSE']
+    badgesSource: ['All', 'Event', 'Permanent Prompt', 'Faction Prompt'],
 
   }
 
@@ -195,15 +195,20 @@ charadex.page.badges = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.badgesTypes,
+      'Source': charadex.sheet.options.badgesSource,
     }
   },
 
+  fauxFolder: {
+    toggle: true,
+    folderProperty: 'Type',
+    parameters: charadex.sheet.options.badgesTypes,
+  },
 
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Badges', 'Source']
+    parameters: ['All', 'Badges', 'Source', 'Type']
   },
 
   prevNext: {
@@ -216,14 +221,16 @@ charadex.page.badges = {
 /* --------------------------------------------------------------- */
 charadex.page.collection = {
 
+  // Dex Set Up
   sheetPage: charadex.sheet.pages.collection,
-  sitePage: 'collection',
+  sitePage: 'collections',
   dexSelector: 'charadex',
   profileProperty: 'username',
-  
+
+  // Dex Options
   sort: {
     toggle: true,
-    key: "id",
+    key: "username",
     order: "asc",
     parameters: []
   },
@@ -235,27 +242,33 @@ charadex.page.collection = {
   },
 
   filters: {
-    toggle: true,
-    parameters: {
-      'Type': charadex.sheet.options.badgesTypes,
-    }
+    toggle: false,
+    parameters: {}
   },
 
+  fauxFolder: {
+    toggle: false,
+    folderProperty: '',
+    parameters: [],
+  },
 
   search: {
     toggle: true,
-    filterToggle: true,
-    parameters: ['All', 'Badges', 'Source']
+    filterToggle: false,
+    parameters: ['Username']
   },
 
   prevNext: {
-    toggle: true,
+    toggle: false,
   },
+
+
+  // This is a special config for their inventory
   collectionConfig: {
 
     sheetPage: charadex.sheet.pages.badges,
     sitePage: 'badges',
-    dexSelector: 'collection',
+    dexSelector: 'inventory',
     profileProperty: 'badges',
     profileToggle: false,
 
@@ -264,17 +277,22 @@ charadex.page.collection = {
       sortProperty: "badges",
       order: "asc",
       parametersKey: 'type', 
-      parameters: charadex.sheet.options.BadgesTypes
+      parameters: charadex.sheet.options.badgesTypes
     },
 
     search: {
       toggle: true,
       filterToggle: false,
       parameters: ['Badges']
-     }
     },
 
-
+    filters: {
+      toggle: true,
+      parameters: {
+        'Type': charadex.sheet.options.badgesTypes,
+        'Rarity': charadex.sheet.options.badgesRarity,
+      }
+    },
 };
 
 /* Prompts
@@ -765,7 +783,7 @@ charadex.page.inventory = {
       primaryProperty: 'username',
       relatedProperty: 'username',
       dexSelector: 'collection',
-      profileProperty: '',
+      profileProperty: 'badges',
       profileToggle: false,
 
     }
