@@ -758,7 +758,7 @@ charadex.page.inventory = {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
-      ...charadex.page.badges, 
+      ...charadex.page.collection, 
 
       sheetPage: charadex.sheet.pages.collection,
       sitePage: 'collection',
