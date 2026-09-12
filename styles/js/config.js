@@ -44,7 +44,7 @@ charadex.sheet = {
     badges:        "badges",
     events:        "events",
     factions:      "factions",
-    badgeCollection: "badge collection"
+    collection: "collection"
   },
 
   options: {
@@ -212,12 +212,12 @@ charadex.page.badges = {
 
 };
 
-/* Badge Collection
+/* collection
 /* --------------------------------------------------------------- */
-charadex.page.badgeCollection = {
+charadex.page.collection = {
 
-  sheetPage: charadex.sheet.pages.badgeCollection,
-  sitePage: 'badge collection',
+  sheetPage: charadex.sheet.pages.collection,
+  sitePage: 'collection',
   dexSelector: 'charadex',
   profileProperty: 'username',
   
@@ -251,11 +251,11 @@ charadex.page.badgeCollection = {
   prevNext: {
     toggle: true,
   },
-  badgeCollectionConfig: {
+  collectionConfig: {
 
     sheetPage: charadex.sheet.pages.badges,
     sitePage: 'badges',
-    dexSelector: 'badge collection',
+    dexSelector: 'collection',
     profileProperty: 'badge',
     profileToggle: false,
 
@@ -754,17 +754,17 @@ charadex.page.inventory = {
     },
 
 
-        [charadex.sheet.pages.badgeCollection]: {
+        [charadex.sheet.pages.collection]: {
 
       // This imports the config from the masterlist
       // So you dont have to repeat yourself
       ...charadex.page.badges, 
 
-      sheetPage: charadex.sheet.pages.badgeCollection,
-      sitePage: 'badge collection',
+      sheetPage: charadex.sheet.pages.collection,
+      sitePage: 'collection',
       primaryProperty: 'username',
       relatedProperty: 'username',
-      dexSelector: 'badge collection',
+      dexSelector: 'collection',
       profileProperty: 'badge',
       profileToggle: false,
 
