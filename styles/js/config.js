@@ -59,7 +59,7 @@ charadex.sheet = {
     traitTypes: ['All', 'Basic Traits', 'Hoard', 'Gummi', 'Body Additions', 'Mutation', 'Other'],
     adoptTypes: ['All', 'BTA', 'OTA', 'Raffle'],
     stock: ['All', 'In Stock'],
-    badgeTypes: ['All', 'Character', 'User'],
+    badgesTypes: ['All', 'Character', 'User'],
     eventCurrent: ['All', 'TRUE', 'FALSE']
 
   }
@@ -177,7 +177,7 @@ charadex.page.badges = {
   sheetPage: charadex.sheet.pages.badges,
   sitePage: 'badges',
   dexSelector: 'charadex',
-  profileProperty: 'badge',
+  profileProperty: 'badges',
 
   sort: {
     toggle: true,
@@ -195,7 +195,7 @@ charadex.page.badges = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.badgeTypes,
+      'Type': charadex.sheet.options.badgesTypes,
     }
   },
 
@@ -203,7 +203,7 @@ charadex.page.badges = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Badge', 'Source']
+    parameters: ['All', 'Badges', 'Source']
   },
 
   prevNext: {
@@ -237,7 +237,7 @@ charadex.page.collection = {
   filters: {
     toggle: true,
     parameters: {
-      'Type': charadex.sheet.options.badgeTypes,
+      'Type': charadex.sheet.options.badgesTypes,
     }
   },
 
@@ -245,7 +245,7 @@ charadex.page.collection = {
   search: {
     toggle: true,
     filterToggle: true,
-    parameters: ['All', 'Badge', 'Source']
+    parameters: ['All', 'Badges', 'Source']
   },
 
   prevNext: {
@@ -256,15 +256,15 @@ charadex.page.collection = {
     sheetPage: charadex.sheet.pages.badges,
     sitePage: 'badges',
     dexSelector: 'collection',
-    profileProperty: 'badge',
+    profileProperty: 'badges',
     profileToggle: false,
 
     sort: {
       toggle: true,
-      sortProperty: "badge",
+      sortProperty: "badges",
       order: "asc",
       parametersKey: 'type', 
-      parameters: charadex.sheet.options.BadgeTypes
+      parameters: charadex.sheet.options.BadgesTypes
     },
 
     search: {
@@ -765,7 +765,7 @@ charadex.page.inventory = {
       primaryProperty: 'username',
       relatedProperty: 'username',
       dexSelector: 'collection',
-      profileProperty: 'badge',
+      profileProperty: '',
       profileToggle: false,
 
     }
