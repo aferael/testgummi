@@ -329,6 +329,27 @@ charadex.manageData = {
     return inventoryData;
   
   },
+    /* Fixes old style of inventories
+  ===================================================================== */
+  async collectionFix(profileArray) {
+
+    let itemArr = await charadex.importSheet(charadex.sheet.pages.badges);
+  
+    let collectionData = [];
+    for (let property in profileArray) {
+      for (let item of itemArr) {
+        if (property === charadex.tools.scrub(item.badges) && profileArray[property] !== '') collectionData.push({
+          ... item,
+          ... {
+            quantity: profileArray[property]
+          }
+        });
+      }
+    }
+  
+    return collectionData;
+  
+  },
   
   /* Adds profile links
   ===================================================================== */
