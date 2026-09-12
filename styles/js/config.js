@@ -293,6 +293,7 @@ charadex.page.collection = {
         'Rarity': charadex.sheet.options.badgesRarity,
       }
     },
+  },
 };
 
 /* Prompts
