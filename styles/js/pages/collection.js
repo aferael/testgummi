@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null,
-    charadex.page.badgeCollection,
+    charadex.page.collection,
     null, 
     async (listData) => {
 
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Inventory
         charadex.initialize.groupGallery(
-          charadex.page.badgeCollection.badgeCollectionConfig,
-          await charadex.manageData.badgeCollectionFix(profile),
+          charadex.page.collection.collectionConfig,
+          await charadex.manageData.collectionFix(profile),
           'type',
           charadex.url.getPageUrl('badges')
         )
