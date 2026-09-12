@@ -36,12 +36,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         
         // Badges
-        if (charadex.tools.checkArray(profile.collection)) {
-          let badges = await charadex.initialize.page(
-            profile.collection,
-            charadex.page.collection.relatedData['badges'],
-          );
-        }
+        charadex.initialize.groupGallery(
+          charadex.page.collection.collectionConfig,
+          await charadex.manageData.collectionFix(profile),
+          'type',
+          charadex.url.getPageUrl('badges')
+        )
         
         // Logs
         if (charadex.tools.checkArray(profile.inventorylog)) {
