@@ -26,12 +26,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           'type',
           charadex.url.getPageUrl('items')
           )
-        charadex.initialize.groupGallery(
-          charadex.page.collection.inventoryConfig,
-          await charadex.manageData.collectionFix(profile),
-          'type',
-          charadex.url.getPageUrl('badges')
-        )
 
         // Designs
         if (charadex.tools.checkArray(profile.masterlist)) {
@@ -42,12 +36,12 @@ document.addEventListener("DOMContentLoaded", async () => {
         }
         
         // Badges
-        //if (charadex.tools.checkArray(profile.collection)) {
-          //let collection = await charadex.initialize.page(
-            //profile.collection,
-            //charadex.page.inventory.relatedData['collection'],
-          //);
-        //}
+        if (charadex.tools.checkArray(profile.collection)) {
+          let collection = await charadex.initialize.page(
+            profile.collection,
+            charadex.page.inventory.relatedData['collection'],
+          );
+        }
         
         // Logs
         if (charadex.tools.checkArray(profile.inventorylog)) {
