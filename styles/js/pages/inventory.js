@@ -2,7 +2,7 @@
 /* Import Charadex
 ======================================================================= */
 import { charadex } from '../charadex.js';
-
+import { collection } from 'collection.js';
 
 /* ==================================================================== */
 /* Load
