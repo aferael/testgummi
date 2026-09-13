@@ -7,8 +7,6 @@ let collection = {};
 /* ==================================================================== */
 /* Load
 ======================================================================= */
-document.addEventListener("DOMContentLoaded", async () => {
-
   let dex = await charadex.initialize.page(
     null,
     charadex.page.collection,
@@ -30,6 +28,5 @@ document.addEventListener("DOMContentLoaded", async () => {
       }
     }
   );
-});
 
 export { collection };
