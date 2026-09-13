@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             profile.collection,
             charadex.page.inventory.relatedData['collection'],
           );
-        )
+        }
         
         // Logs
         if (charadex.tools.checkArray(profile.inventorylog)) {
