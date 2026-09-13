@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         
         // Badges
         if (charadex.tools.checkArray(profile.collection)) {
-          let badges = await charadex.initialize.page(
+          let collection = await charadex.initialize.page(
             profile.collection,
             charadex.page.inventory.relatedData['collection'],
           );
