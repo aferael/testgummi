@@ -278,7 +278,7 @@ charadex.page.collection = {
       sortProperty: "badges",
       order: "asc",
       parametersKey: 'type', 
-      parameters: charadex.sheet.options.badgesTypes
+      parameters: charadex.sheet.options.badgesSources
     },
 
     search: {
