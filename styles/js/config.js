@@ -224,7 +224,7 @@ charadex.page.collection = {
 
   // Dex Set Up
   sheetPage: charadex.sheet.pages.collection,
-  sitePage: 'collections',
+  sitePage: 'collection',
   dexSelector: 'charadex',
   profileProperty: 'username',
 
@@ -291,7 +291,7 @@ charadex.page.collection = {
       toggle: true,
       parameters: {
         'Type': charadex.sheet.options.badgesTypes,
-        'Rarity': charadex.sheet.options.badgesRarity,
+        'Source': charadex.sheet.options.badgesSource,
       }
     },
   },
