@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", async () => {
           charadex.url.getPageUrl('items')
           )
         
-        // Badges
-        if (charadex.tools.checkArray(profile.collection)) {
-          let collection = await charadex.initialize.page(
-            profile.collection,
-            charadex.page.inventory.relatedData['collection'],
+        // Designs
+        if (charadex.tools.checkArray(profile.masterlist)) {
+          let designs = await charadex.initialize.page(
+            profile.masterlist,
+            charadex.page.inventory.relatedData['masterlist'],
           );
         }
         
