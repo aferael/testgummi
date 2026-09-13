@@ -785,7 +785,7 @@ charadex.page.inventory = {
       primaryProperty: 'username',
       relatedProperty: 'username',
       dexSelector: 'collection',
-      profileProperty: 'badges',
+      profileProperty: 'username',
       profileToggle: false,
 
     }
