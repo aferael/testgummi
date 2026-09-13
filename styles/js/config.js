@@ -195,6 +195,7 @@ charadex.page.badges = {
   filters: {
     toggle: true,
     parameters: {
+      'Type': charadex.sheet.options.badgesType,
       'Source': charadex.sheet.options.badgesSource,
     }
   },
