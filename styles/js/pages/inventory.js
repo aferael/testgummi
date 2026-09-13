@@ -2,7 +2,6 @@
 /* Import Charadex
 ======================================================================= */
 import { charadex } from '../charadex.js';
-import { collection } from './collection.js';
 
 /* ==================================================================== */
 /* Load
@@ -33,6 +32,10 @@ document.addEventListener("DOMContentLoaded", async () => {
             profile.masterlist,
             charadex.page.inventory.relatedData['masterlist'],
           );
+        }
+                // Designs
+        if (charadex.tools.checkArray(profile.collection)) {
+          let collection = await import('./collection.js')
         }
         
         // Logs
