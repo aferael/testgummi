@@ -26,14 +26,6 @@ document.addEventListener("DOMContentLoaded", async () => {
           'type',
           charadex.url.getPageUrl('items')
           )
-
-        // Designs
-        if (charadex.tools.checkArray(profile.masterlist)) {
-          let designs = await charadex.initialize.page(
-            profile.masterlist,
-            charadex.page.inventory.relatedData['masterlist'],
-          );
-        }
         
         // Badges
         if (charadex.tools.checkArray(profile.collection)) {
