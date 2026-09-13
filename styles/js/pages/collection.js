@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   let dex = await charadex.initialize.page(
     null,
-    charadex.page.inventory,
+    charadex.page.collection,
     null, 
     async (listData) => {
 
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         // Inventory
         charadex.initialize.groupGallery(
-          charadex.page.inventory.inventoryConfig,
-          await charadex.manageData.inventoryFix(profile),
+          charadex.page.collection.collectionConfig,
+          await charadex.manageData.collectionFix(profile),
           'type',
-          charadex.url.getPageUrl('items')
+          charadex.url.getPageUrl('badges')
         )
 
         // Designs
@@ -34,15 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
             charadex.page.inventory.relatedData['masterlist'],
           );
         }
-        
-        // Badges
-        if (charadex.tools.checkArray(profile.collection)) {
-          let collection = await charadex.initialize.page(
-            profile.collection,
-            charadex.page.inventory.relatedData['collection'],
-          );
-        }
-        
+
         // Logs
         if (charadex.tools.checkArray(profile.inventorylog)) {
           let logs = await charadex.initialize.page(
