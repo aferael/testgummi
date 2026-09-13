@@ -25,6 +25,8 @@ document.addEventListener("DOMContentLoaded", async () => {
           await charadex.manageData.inventoryFix(profile),
           'type',
           charadex.url.getPageUrl('items')
+          )
+        charadex.initialize.groupGallery(
           charadex.page.collection.inventoryConfig,
           await charadex.manageData.collectionFix(profile),
           'type',
