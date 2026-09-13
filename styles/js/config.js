@@ -269,7 +269,7 @@ charadex.page.collection = {
 
     sheetPage: charadex.sheet.pages.badges,
     sitePage: 'badges',
-    dexSelector: 'inventory',
+    dexSelector: 'collection',
     profileProperty: 'badges',
     profileToggle: false,
 
