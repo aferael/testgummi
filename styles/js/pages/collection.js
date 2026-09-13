@@ -19,17 +19,18 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         let profile = listData.profileArray[0];
 
-        // Inventory
+        // collection
         charadex.initialize.groupGallery(
           charadex.page.collection.collectionConfig,
           await charadex.manageData.collectionFix(profile),
           'type',
           charadex.url.getPageUrl('badges')
         )
-        
+
       }
     }
   );
+  
   
   charadex.tools.loadPage('.softload', 500);
   
