@@ -1087,9 +1087,11 @@ filter: drop-shadow(2px 4px 6px black);
 /* Progress Bars */
 .progress, .mprogress, .fprogress, .wprogress, .vprogress {
 	background-color: var(--cd-secondary-color);
+	border-radius: 0;
 }
 .progress-track {
 	background-color:   var(--cd-primary-color);
+	border-radius: 0;
 }
 
 /* Stats */
