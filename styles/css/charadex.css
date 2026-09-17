@@ -1085,12 +1085,21 @@ filter: drop-shadow(2px 4px 6px black);
 }
 
 /* Progress Bars */
-.progress {
+.progress, .mprogress, .fprogress, .wprogress, .vprogress {
 	background-color: var(--cd-secondary-color);
 }
 .progress-track {
 	background-color:   var(--cd-primary-color);
 }
+
+/* Stats */
+.mroman, .froman, .wroman, .vroman {
+	margin-top: -30px;
+    z-index: 3;
+    position: relative;
+    text-align: right;
+}
+
 
 /* NO DUPES!! */
 .no-dupes:nth-child(2n) {
