@@ -267,6 +267,10 @@
             aria-controls="profile" aria-selected="true">Profile</a>
           </li>
           <li class="col p-1 nav-item" role="presentation">
+            <a class="w-100 btn btn-primary" id="stats-tab" data-toggle="tab" href="#stats" aria-controls="stats" 
+            aria-selected="false">Stats</a>
+          </li>
+          <li class="col p-1 nav-item" role="presentation">
             <a class="w-100 btn btn-primary" id="logs-tab" data-toggle="tab" href="#logs" aria-controls="logs" 
             aria-selected="false">Logs</a>
           </li>
@@ -364,6 +368,60 @@
                     <div class="px-4 cd-text-pre notes"></div>
                   </div>
 
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+             <!-- Main Profile
+          <!-- ----------------------------------------------------------- -->
+          <div class="tab-pane fade active show" id="stats" role="tabpanel" aria-labelledby="stats-tab" tabindex="0">
+            <div class="row no-gutters m-n2">
+
+              <div class="col-md-6 p-2">
+                <div class="card bg-faded p-4 h-100">
+
+                <!-- Item -->
+                            <div class="">
+                                <center><b class="text-muted">Might</b></center>
+                                <div class="pl-3 might" style="margin-bottom:10px;"></div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="">
+                                <center><b class="text-muted">Finesse</b></center>
+                                <div class="pl-3 finesse" style="margin-bottom:10px;"></div>
+                            </div>
+
+                            <!-- Item -->
+                            <div class="">
+                                <center><b class="text-muted">Wit</b></center>
+                                <div class="pl-3 wit" style="margin-bottom:10px;"></div>
+                            </div>
+
+                </div>
+              </div>
+
+              <div class="col-md-6 p-2">
+                <div class="card bg-faded p-4 h-100">
+                  
+                  <div class="d-flex no-gutters mb-2 justify-content-center">
+                    <div class="pl-3 stamina progress"></div>
+                  </div>
+                  <!-- Item -->
+                  <div class="d-flex no-gutters mb-2">
+                    <b class="text-muted col-md-5 col-6">Vigor</b>
+                    <span class="pl-3 vigor"></span>
+                  </div>
+    
+                  <!-- Item -->
+                   <div class="">
+                      <center><b class="text-muted">Aura</b></center>
+                      <div class="pl-3 aura" style="margin-bottom:10px;"></div>
+                   </div>
+    
+                 
                 </div>
               </div>
 
