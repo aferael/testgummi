@@ -43,6 +43,7 @@ charadex.initialize.page = async (dataArr, config, dataCallback, listCallback, c
     if (entry.fprogress) entry.fprogress = `<div class="progress progress-track" style="width:${charadex.tools.scrub(entry.fprogress)}%"></div>`; // Finesse
     if (entry.wprogress) entry.wprogress = `<div class="progress progress-track" style="width:${charadex.tools.scrub(entry.wprogress)}%"></div>`; // Wit
     if (entry.vprogress) entry.vprogress = `<div class="progress progress-track" style="width:${charadex.tools.scrub(entry.vprogress)}%"></div>`; // Vigor
+    if (entry.sprogress) entry.sprogress = `<div class="progress progress-track" style="width:${charadex.tools.scrub(entry.sprogress)}%"></div>`; // Stamina
   }
 
   // If there's related data, add it
